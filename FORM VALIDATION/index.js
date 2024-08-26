@@ -50,9 +50,20 @@ function validateForm() {
    
     const fullName = first +" " + last;
 
-    const duplicateEmail = allDataArray.some(entry => entry.email === email );
-    const duplicateNum= allDataArray.some(entry => entry.number === number );
-    
+    if (!isEditMode) {
+        const duplicateEmail = allDataArray.some(entry => entry.email === email);
+        const duplicateNum = allDataArray.some(entry => entry.number === number);
+        
+        if (duplicateEmail) {
+            email_error.innerText = 'Error: Duplicate email!';
+            return false;
+        }
+        
+        if (duplicateNum) {
+            number_error.innerText = 'Error: Duplicate Phone Number!';
+            return false;
+        }
+    }
     
    
     if (first == "") {
@@ -76,10 +87,7 @@ function validateForm() {
     } else if (!validateEmail(email)) {
         email_error.innerText = "Invalid email format!";
         return
-    } else if (duplicateEmail){
-        email_error.innerText = 'Error: Duplicate email!';
-        return
-        }
+    } 
         
     
 
@@ -89,10 +97,7 @@ function validateForm() {
     }  else if (!validatePhoneNumber(number)) {
         number_error.innerText = "Invalid phone number format!";
         return
-    }else if (duplicateNum){
-        number_error.innerText = 'Error: Duplicate Phone Number!';
-        return
-        }
+    }
    
 
     if (date == ""){
@@ -114,6 +119,8 @@ function validateForm() {
     return true;
    
      }
+
+    
 
      
 function validateEmail(email) {
