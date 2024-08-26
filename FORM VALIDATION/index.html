@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Form Validation</title>
+     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+    
+     <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+        <div class="head">
+            <h3>EMPLOYEE INFORMATION</h3>
+        </div>
+        <div class="box">
+        <!-- <div class="box1">
+        <div class="pic" id="pic">
+        </div>
+        <div class="sign" id="sign">
+        </div>
+      </div> -->
+        <div class="box1">
+            <div  class="image1">
+              <img  id="img1" src="/images/avatar.png" alt="image preview" ><br>
+                <input type="file" id="imageUrl1" accept="image/*">
+            </div>
+            <div  class="image2">
+              <img id="img2"    src="/images/landscape.avif" alt="image preview"><br>
+              <input type="file" id="imageUrl2" accept="image/*">
+           
+            </div>
+            
+        </div>
+    </div>
+  </div>
+    <div class="right">
+        <div  class="form_container">
+          <form id="myForm">
+            <div class="info" style="padding-top: 10px;">
+            <label for="first">FIRST NAME</label>
+              <input type="text"  id="first">
+            <p class="error" id="first_error" style="color: red;"></p>
+          </div>
+          <div class="info">
+              <label for="last">LAST NAME</label>
+              <input type="text" id="last" >
+            <p class="error" id="last_error" style="color: red;"></p>
+          </div>
+          <div class="info">
+            <label for="address">ADDRESS</label>
+              <input type="text" id="address" >
+            <p id="address_error" style="color: red;"></p>
+          </div>
+          <div class="info">
+            <label for="email">EMAIL</label>
+              <input type="email" id="email">
+            <p id="email_error" style="color: red;"></p>
+          </div>
+          <div class="info">
+            <label for="number">PHONE NUMBER</label>
+              <input type="text" id="number">
+            <p id="number_error" style="color: red;"></p>
+          </div>
+          <div class="info">
+            <label for="date">DOB</label>
+              <input type="date" id="date">
+            <p  id="date_error" style="color: red;"></p>
+          </div>
+      <div class="submit">
+          <button type="button" onclick="validateForm()" id="btn">Save</button>
+        </div>
+        </form>     
+     </div>
+
+
+    </div>
+    </div>
+    <div>
+      <input type="search" placeholder="Search..." class="find" id="searchInput">
+    </div>
+
+    <div id="tableContainer" class="tableWrapper">
+      <table  id="table" style="border: 1px solid black;" >
+        <thead>
+          <tr>
+            <th>Fullname</th>
+            <th>Email</th>
+            <th>Phone number</th>
+            <th>Date of Birth</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          
+        </tbody>
+      </table>
+    </div>
+
+  
+    
+      <script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+
+

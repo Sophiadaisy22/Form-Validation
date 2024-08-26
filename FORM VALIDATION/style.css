@@ -1,0 +1,151 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    border: 5px solid black;
+    background-color: rgba(0, 0, 255, 0.616);
+    display: flex;
+    flex-direction: row;
+    flex: 1 !important;
+    padding: 20px;
+    padding-top: 0px;
+    gap: 5px;
+}
+
+.head{
+    border: 1px solid black;
+    background-color: white;
+    margin-bottom: 10px;
+    
+}
+.head h3{
+    font-size: 16px ;
+    color: black;
+    font-weight: bold;
+}
+.box{
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+.box1{
+    display: flex;
+    gap: 5px; 
+    padding-top: 20px; 
+    img{
+        background-color: white;
+    border: 2px solid black;
+
+    }
+}
+
+
+
+.image1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+    margin: 10px;
+
+}
+.image1 input{
+    width: 100px;
+  
+}
+.image1 img{
+    width: 280px;
+    height: 200px;
+}
+
+.image2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+    margin: 10px;
+}
+.image2 img{
+    width: 280px;
+    height: 200px;
+}
+.image2 input{
+    width: 100px;
+}
+
+
+.right{
+    width: 50% ; 
+    border: 2px solid black;
+    margin-top: 40px;
+    background: white;
+
+    
+}
+.info{
+    display: flex ;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.info input{
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 1px ;
+    height: 30px;
+    margin-left: 40px;
+    display: block;
+    
+}
+.info label{
+    width: 30%;
+    line-height: 32px;
+    padding-left: 25px;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+    margin: 0 30px;
+}
+.submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tableWrapper{
+    display: flex;
+    margin: 20px;
+}
+
+table, th, tbody, td{
+    border: 1px solid black;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 25px;
+    margin-left: 65px;
+   
+}
+thead{
+    background-color: rgba(0, 0, 255, 0.349);
+    color: white;
+}
+
+.find{
+     margin: 20px;
+     margin-bottom: 0px;
+     margin-left: 40px;
+     border: 1px solid black;
+     border-radius: 4px;
+}
+#update{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+    margin: 0 30px;
+}
